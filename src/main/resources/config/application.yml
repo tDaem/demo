@@ -164,11 +164,11 @@ spring:
       client:
         provider:
           oidc:
-            issuer-uri: http://localhost:9080/auth/realms/jhipster
+            issuer-uri: http://keycloak:9080/auth/realms/daemon
         registration:
           oidc:
-            client-id: internal
-            client-secret: internal
+            client-id: demo
+            client-secret: DOZX8Afll28KLjVI4AASKUeJuPSupoZi
             scope: openid, profile, email, offline_access # last one for refresh tokens
 
 server:
