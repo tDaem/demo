@@ -16,7 +16,7 @@ public class DemoResource {
     private final Logger log = LoggerFactory.getLogger(DemoResource.class);
 
     @GetMapping("/demo")
-    public Mono<ResponseEntity<Flux<String>>> getAllPublicUsers(String str) {
+    public Mono<ResponseEntity<Flux<String>>> demo(String str) {
         log.debug("REST request to get all public User names");
 
         return Mono.just(ResponseEntity.ok(Flux.just(str)));
